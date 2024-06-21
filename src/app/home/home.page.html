@@ -6,18 +6,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding" [fullscreen]="true">
+<ion-content class="ion-padding">
  <div class="ion-text-center" >
   <img src="../../assets/we.png" style="width: 200px; height: auto;">
 </div>
  <ion-card color="success" class="ion-padding" shape="round">
 
   <ion-item>
-    <ion-input label="น้ำหนัก" placeholder="KG"></ion-input>
+    <ion-input label="น้ำหนัก" placeholder="KG" type="number"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input  label="ส่วนสูง" placeholder="CM"></ion-input>
+    <ion-input  label="ส่วนสูง" placeholder="CM" type="number"></ion-input>
   </ion-item>
 
 
@@ -34,12 +34,22 @@
   </ion-button>
  </ion-card>
 
- <ion-button size="large" expand="block" color="tertiary">
-  ผลลัพธ์
-</ion-button>
 
-<ion-button size="large" expand="block" color="tertiary">
+ <ion-card class="ion-text-center" color="tertiary">
+  <ion-card-header>
+   <ion-card-subtitle>ผลลัพธ์ </ion-card-subtitle>
+   <ion-card-title>18.5</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card class="ion-text-center" color="tertiary">
+  <ion-card-header>
+   <ion-card-subtitle> แปรผล </ion-card-subtitle>
+   <ion-card-title>อยู่ในเกณฑ์ปกติ</ion-card-title>
+  </ion-card-header>
+</ion-card>
+<!-- <ion-card color="tertiary" class="ion-text-center ion-padding" >
   แปรผล
-</ion-button>
+</ion-card> -->
 
 </ion-content>
